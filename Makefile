@@ -6,8 +6,10 @@ ps: ## appコンテナを起動
 	docker compose ps
 up: ## appコンテナを起動
 	docker compose up app -d
-app: ## appコンテナを起動
-	docker compose exec -it app bash
+login: ## appコンテナにログイン
+	docker compose exec -it app sh
+log: ## appコンテナのログを表示
+	docker compose logs app
 rebuild: ## appコンテナを再起動
 	docker compose up app -d --build
 down: ## appコンテナを停止
