@@ -4,11 +4,11 @@ services:
       context: .
     working_dir: /app
     ports:
-      - "12000:3000"
+      - "3000:3000"
     stdin_open: true
     tty: true
     volumes:
-      - .:/app
-      - node_modules:/app/node_modules
+      - ./app:/app
+      - ./app/node_modules:/app/node_modules
 volumes:
   node_modules:
