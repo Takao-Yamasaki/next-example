@@ -1,9 +1,9 @@
 FROM node:22-alpine3.19
 
-# WORKDIR /app/
+WORKDIR /app/
 
-# COPY ./package.json ./
+COPY ./app/package.json ./
 
-# RUN npm install
+RUN npm install
 
-# CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "run", "dev" ]
