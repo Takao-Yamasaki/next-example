@@ -8,7 +8,7 @@ up: ## appコンテナを起動
 	docker compose up app -d
 login: ## appコンテナにログイン
 	docker compose exec -it app sh
-log: ## appコンテナのログを表示
+logs: ## appコンテナのログを表示
 	docker compose logs app
 rebuild: ## appコンテナを再起動
 	docker compose up app -d --build
